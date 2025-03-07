@@ -1,0 +1,415 @@
+.home__container{
+  row-gap: 7rem;
+  padding-top: 8rem;
+ 
+}
+.home__content{
+  grid-template-columns: 70px repeat(2,1fr);
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.home__social{
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+.home__social-icon {
+  font-size: 1.4rem;
+  color: var(--title-color);
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.home__social-icon:hover {
+  color: #ffcc00; /* Optional: Change the color on hover */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(192, 255, 43, 0.7), 0 0 30px rgba(0, 0, 0, 0.7); /* Glowing effect */
+}
+
+
+.home__social-icon:hover{
+  color:var(--title-color-dark)
+}
+.home__title{
+  font-size: 2.2rem;
+  margin-bottom: var(--mb-0-25);
+  color: black;
+}
+.home__subtitle{
+  position: relative;
+  font-size: var(--h4-font-size);
+  padding-left: 5rem;
+  font-weight: var(--font-normal);
+  margin-bottom: var(--mb-1);
+}
+
+.home__subtitle::before{
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 1px;
+   background-color: var(--text-color);
+   left: 0;
+   top: 1rem;
+}
+
+.home__description{
+  max-width: 400px;
+  margin-bottom: var(--mb-3);
+   font-size: 1.2rem;
+}
+
+.home__img{
+  background:url(../../assets/profile1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(235 235 235/30%);
+  order: 1;
+  justify-self: right;
+  width: 350px;
+  height: 350px;
+  animation: profile__animate 5s ease-in-out infinite 1s;
+}
+
+@keyframes profile__animate{
+  0%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+.cv__icon{
+  font-size: 1.5rem;
+}
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+.home__content{
+  grid-template-columns: 60px repeat(2,1fr);
+  column-gap: 1.25rem;
+  align-items: center;
+}
+.home__title{
+  font-size: 2rem;
+  margin-bottom: var(--mb-0-25);
+  color: black;
+}
+.home__subtitle{
+  position: relative;
+  font-size: 1.2rem ;
+  padding-left: 5rem;
+  font-weight: var(--font-normal);
+  margin-bottom: var(--mb-1);
+}
+.home__description{
+  max-width: 400px;
+  margin-bottom: var(--mb-3);
+   font-size: 1rem;
+}
+.home__img{
+  background:url(../../assets/profile1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(235 235 235/30%);
+  order: 1;
+  justify-self: center;
+  width: 250px;
+  height: 250px;
+  animation: profile__animate 5s ease-in-out infinite 1s;
+}
+  .button {
+    padding: 0.5rem 1.25rem;
+  }
+
+  .button__icon {
+    width: 15px;
+    height: 15px;
+  }
+
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+ .home__content {
+  margin-top: -80px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Change to 3 equal columns */
+  gap: 1.25rem;
+  align-items: center;
+  grid-auto-rows: auto; /* Adjust row height as content wraps */
+}
+
+.home__subtitle::before{
+  width: 0;
+}
+.home__content > :nth-child(3) {
+  grid-column: 1 / -1; 
+  order: -1; 
+}
+.home__content > :nth-child(1) {
+  order: 1;
+}
+.home__title{
+  font-size: 1.7rem;
+  margin-bottom: var(--mb-0-25);
+  color: black;
+}
+.home__subtitle{
+  position: relative;
+  font-size: 1rem ;
+  padding-left: 0;
+  font-weight: var(--font-normal);
+  margin-bottom: var(--mb-1);
+}
+.home__description{
+  max-width: 400px;
+  margin-bottom: var(--mb-3);
+   font-size: 0.9rem;
+}
+.home__img{
+  background:url(../../assets/profile1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(235 235 235/30%);
+  order: 1;
+  justify-self: center;
+  width: 250px;
+  height: 250px;
+  animation: profile__animate 5s ease-in-out infinite 1s;
+}
+  .button {
+    padding: 0.4rem 1rem;
+  }
+
+  .button__icon {
+    width: 45px;
+    height: 45px;
+  }
+.home__social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px 100px;
+}
+
+.home__content > :nth-child(2),.home__content > :nth-child(1) {
+  grid-column: 2 / 5; 
+  text-align: center;
+}
+
+}
+
+@media screen and (max-width: 576px) {
+  .home__content {
+  margin-top: -80px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Change to 3 equal columns */
+  gap: 1.25rem;
+  align-items: center;
+  grid-auto-rows: auto; /* Adjust row height as content wraps */
+}
+
+.home__subtitle::before{
+  width: 0;
+}
+.home__content > :nth-child(3) {
+  grid-column: 1 / -1; 
+  order: -1; 
+}
+.home__content > :nth-child(1) {
+  order: 1;
+}
+.home__title{
+  font-size: 1.5rem;
+  margin-bottom: var(--mb-0-25);
+  color: black;
+}
+.home__subtitle{
+  position: relative;
+  font-size: 1rem ;
+  padding-left: 0;
+  font-weight: var(--font-normal);
+  margin-bottom: var(--mb-1);
+}
+.home__description{
+  max-width: 400px;
+  margin-bottom: var(--mb-3);
+   font-size: 0.8rem;
+}
+.home__img{
+  background:url(../../assets/profile1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(235 235 235/30%);
+  order: 1;
+  justify-self: center;
+  width: 200px;
+  height: 200px;
+  animation: profile__animate 5s ease-in-out infinite 1s;
+}
+  .button {
+    padding: 0.4rem 1rem;
+  }
+
+  .button__icon {
+    width: 45px;
+    height: 45px;
+  }
+.home__social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0px 50px;
+}
+
+.home__content > :nth-child(2),.home__content > :nth-child(1) {
+  grid-column: 2 / 5; 
+  text-align: center;
+}
+
+}
+
+/* For small devices */
+@media screen and (max-width: 450px) {
+ .home__content {
+  margin-top: -20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Change to 3 equal columns */
+  gap: 1rem;
+  align-items: center;
+  grid-auto-rows: auto; /* Adjust row height as content wraps */
+}
+.download--btn{
+  font-size: 1.2rem;
+}
+.home__subtitle::before{
+  width: 0;
+}
+.home__content > :nth-child(3) {
+  grid-column: 1 / -1; 
+  order: -1; 
+}
+.home__content > :nth-child(1) {
+  order: 1;
+}
+.home__title{
+  font-size: 1.2rem;
+  margin-bottom: var(--mb-0-25);
+  color: black;
+}
+.home__subtitle{
+  position: relative;
+  font-size: 0.8rem ;
+  padding-left: 0;
+  font-weight: var(--font-normal);
+  margin-bottom: var(--mb-1);
+}
+.home__description{
+  max-width: 400px;
+  margin-bottom: var(--mb-3);
+   font-size: 0.7rem;
+}
+.home__img{
+  background:url(../../assets/profile1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(235 235 235/30%);
+  order: 1;
+  justify-self: center;
+  width: 200px;
+  height: 200px;
+  animation: profile__animate 5s ease-in-out infinite 1s;
+}
+  .button {
+    padding: 0.2rem 1rem;
+  }
+
+.home__social{
+  display: flex;
+  flex-direction: row;
+  padding: 0px 30px;
+}
+.social--icon--link{
+  font-size: 1.2rem;
+}
+
+
+.home__content > :nth-child(2),.home__content > :nth-child(1) {
+  grid-column: 2 / 5; 
+  text-align: center;
+}
+}
+/* For small devices */
+@media screen and (max-width: 320px) {
+
+.home__subtitle::before{
+  width: 0;
+}
+.home__content > :nth-child(3) {
+  grid-column: 1 / -1; 
+  order: -1; 
+}
+.home__content > :nth-child(1) {
+  order: 1;
+}
+.home__title{
+  font-size: 1rem;
+  margin-bottom: var(--mb-0-25);
+  color: black;
+}
+.home__subtitle{
+  position: relative;
+  font-size: 0.7rem ;
+  padding-left: 0;
+  font-weight: var(--font-normal);
+  margin-bottom: var(--mb-1);
+}
+.home__description{
+  max-width: 400px;
+  margin-bottom: var(--mb-3);
+   font-size: 0.5rem;
+}
+.home__img{
+  background:url(../../assets/profile1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(235 235 235/30%);
+  order: 1;
+  justify-self: center;
+  width: 200px;
+  height: 200px;
+  animation: profile__animate 5s ease-in-out infinite 1s;
+}
+  .button {
+    padding: 0.2rem 1rem;
+    font-size: 0.8rem;
+  }
+  .button {
+    padding: 0.2rem 1rem;
+    font-size: 0.8rem;
+  }
+.download--btn{
+      font-size: 1rem;
+}
+.home__social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.social--icon--link{
+  font-size: 1rem;
+}
+
+}

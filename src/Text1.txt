@@ -1,0 +1,253 @@
+========== HOME ==========
+.home__social-link
+https://www.linkedin.com/
+https://github.com/
+https://stackoverflow.com/
+
+.home__name
+John Smith
+
+.home__education
+Frontend Developer
+
+.home__description
+I'm a frontend developer based in New York, passionate about crafting responsive and user-friendly web applications.
+
+.home__scroll-name
+Scroll Down
+
+========== ABOUT ==========
+.section__title | .section__subtitle
+About Me
+My introduction
+
+.about__title | .about__subtitle
+Experience
+5+ Years Working
+
+Completed
+50+ Projects
+
+Support
+Online 24/7
+
+.about__description
+I specialize in building interactive user interfaces and front-end components. With years of experience in frontend development, I have successfully delivered projects with a focus on performance and scalability.
+
+========== SKILLS ==========
+.section__title | .section__subtitle
+Skills
+My technical skills
+
+.skills__title
+Frontend Developer
+Backend Developer
+
+.skills__name | .skills__level
+HTML
+Advanced
+
+CSS
+Advanced
+
+JavaScript
+Advanced
+
+Bootstrap
+Intermediate
+
+Git
+Intermediate
+
+React
+Advanced
+
+Vue.js
+Intermediate
+
+Node Js
+Basic
+
+TypeScript
+Intermediate
+
+MySQL
+Basic
+
+Firebase
+Intermediate
+
+========== QUALIFICATION ==========
+.section__title | .section__subtitle
+Qualifications
+My professional journey
+
+.tabs__button
+Education
+Experience
+
+========== SERVICES ==========
+.section__title | .section__subtitle
+Services
+What I offer
+
+.services__title
+Web Development <br> Specialist
+
+Responsive Web <br> Design
+
+UI/UX <br> Design
+
+.services__modal-description
+I bring over 3 years of experience, delivering high-quality work and ensuring client satisfaction through well-crafted front-end solutions.
+
+.services__modal-info
+I build and optimize user interfaces.
+
+Responsive web page development.
+
+I design user-centric web applications.
+
+I provide branding and UI/UX design solutions.
+
+========== WORK ==========
+.section__subtitle | .section__title
+My Portfolio
+Recent Works
+
+.work__item
+All
+Web
+App
+Design
+
+.work__title
+E-commerce site
+
+Landing page
+
+Brand redesign
+
+Web app
+
+Blog platform
+
+========== TESTIMONIALS ==========
+.section__subtitle | .section__title
+My clients say
+Testimonials
+
+.testimonial__name
+Jhon Doe
+
+Harry Clinton
+
+Sara Cill
+
+.testimonial__description
+John's expertise in front-end development is unparalleled. He helped us create a stunning and responsive website that exceeded expectations.
+
+========== CONTACT ==========
+.section__subtitle | .section__title
+Get in touch
+Contact Me
+
+.contact__title
+Talk to me
+
+Tell me about your project
+
+.contact__card-title | .contact__card-data
+Email
+user@gmail.com
+
+Whatsapp
+999-888-777
+
+Messenger
+user.fb123
+
+.contact__button
+mailto:examplemail@gmail.com
+
+https://api.whatsapp.com/send?phone=62214408789&text=Hello, more information!
+
+https://m.me/crypticalcoder
+
+========== FOOTER ==========
+.footer__title
+Smith
+
+.footer__link
+About
+
+Projects
+
+Testimonials
+
+.footer__social-link
+https://www.linkedin.com/
+https://github.com/
+https://stackoverflow.com/
+
+.footer__copy
+&#169; Crypticalcoder. All rights reserved
+
+========== TESTIMONIALS DATA ==========
+Data = [
+  {
+    id: 1,
+    image: Image1,
+    title: "Jhon Doe",
+    description:
+      "John's expertise in front-end development is unparalleled. He helped us create a stunning and responsive website that exceeded expectations.",
+  },
+  {
+    id: 2,
+    image: Image2,
+    title: "Harry Clinton",
+    description:
+      "Working with John was a great experience. His attention to detail and understanding of our vision made him an excellent partner for our project.",
+  },
+  {
+    id: 3,
+    image: Image3,
+    title: "Sara Cill",
+    description:
+      "A fantastic job, John delivered the front-end development of our web app with impressive speed and quality.",
+  },
+];
+
+========== PORTFOLIO DATA ==========
+projectsData = [
+  {
+    id: 1,
+    image: Work1,
+    title: "E-commerce site",
+    category: "web",
+  },
+  {
+    id: 2,
+    image: Work2,
+    title: "Landing page",
+    category: "web",
+  },
+  {
+    id: 3,
+    image: Work3,
+    title: "Brand redesign",
+    category: "design",
+  },
+  {
+    id: 4,
+    image: Work4,
+    title: "Web app",
+    category: "app",
+  },
+  {
+    id: 5,
+    image: Work5,
+    title: "Blog platform",
+    category: "web",
+  },
+];
